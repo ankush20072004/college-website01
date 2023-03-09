@@ -53,37 +53,39 @@
        
     </ul>
     </div>
+
     <div class="contactForm">
     <h2>Admission query</h2>
+    <form name="contact" method ="post" data-netlify="true" onSubmit="submit">
     <div class="formBox">
         <div class="inputBox w50">
-            <input type="text" required>
+            <input type="text" name="name">
             <span>Your Name</span>
         </div>
         <div class="inputBox w50">
-            <input type="email" required>
+            <input type="email" name="email">
             <span>Your Email</span>
         </div>
         <div class="inputBox w50">
-            <input type="text" required>
+            <input type="text" name="phone no">
             <span>Phone Number</span>
         </div>
         <div class="inputBox w50">
-            <input type="text" required>
+            <input type="text" name="course">
             <span>Course</span>
         </div>
         <div class="inputBox w100">
             
             
-            <input type="text" required>
+            <input type="text" name="Text">
             <span>Write your Query here...</span>
             
         </div>
         <div class="inputBox w100">
-            <input type="submit" value="Submit">
-    
+            <button type="submit">"Submit"</button>    
+        </div>
     </div>
-   </div>
+    </form>
    </div>
    </section>
 </body>
