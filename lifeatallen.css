@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+   width: 100vw;
+display: flex;
+justify-content: center;
+padding: 2vh 10vh;
+transition: 0.6s;
+max-height: 9vh;
+border-bottom-left-radius:2vh ;
+border-bottom-right-radius:2vh;
+background-color: rgb(3 ,36, 60);
+
+}
+header.sticky
+{
+ background-color: rgb(47, 64, 77);
+ padding: 1.5vw 10vw;
+
+}
+header .brand
+{
+    color: white;
+    font-size: 3vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2vw;
+    
+}
+header .brand  img
+{
+    height: 14.6vh;
+    position: relative;
+    right: 11.2vw;
+    top: -2.1vh;
+    border-bottom-left-radius:2vw ;
+}
+header.menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header .menu a{
+    font-size: 2.8vh;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #fff;
+    margin: 0 1vh;
+    padding: 0.8vw 1vw 0.6vw 1.4vw;
+    position: relative;
+    top: 2.4vh;
+    left: 4.1vw;
+    border-radius: 2.0vw;
+    transition:0.3s ease-out;
+    transition-property:color,background ;
+}
+header .menu a:hover
+{
+    color: rgb(103, 103, 94);
+    background-color: #fff;
+    
+
+}
+header .btn
+{
+    color: white;
+    font-size:2.5vh;
+    cursor: pointer;
+    display: none;
+    height: 2.0vh;
+}
+
+.section-main .container-slider
+{
+    width: 100%;
+    height: 80vh;
+    background-color: #d6e3e2;
+}
+.container-slider
+{
+    position: relative;
+    top: 2.0vh;
+    overflow: hidden;
+}
+.swiper
+{
+    width:97vw ;
+    height: fit-content;
+    top: 8.0vh;
+    overflow: hidden;
+}
+.swiper-slide img{
+    width:100%;
+    overflow: hidden;
+
+}
+.home
+{
+    position: relative;
+    height: 3em;
+    width: 100%;
+    background-color: rgba(220, 208, 208, 0.875);
+    top: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.grid-1
+{
+    height:140.0vh;
+position: relative;
+top: 4.0vh;
+ display: grid;
+ grid-template-columns: 25vw 25vw 25vw ;
+ grid-template-rows:60.8vh 60.8vh  ;
+ grid-column-gap: 5vw;
+ grid-row-gap: 5.0vw;
+ justify-content: center;
+ background-color: rgba(9, 32, 88, 0.466);
+
+
+ 
+}
+.grid-1 .item1 , .grid-1 .item2 , .grid-1 .item3 , .grid-1 .item4 , .grid-1 .item5
+{
+    background-color: rgba(206, 202, 202, 0.64);
+    width: 25vw;
+    box-sizing: content-box;
+    box-shadow: 0.2vh 0.2vh 1.0vh black;
+    padding: 0.4vh;
+    font-size: 3vh;
+    overflow: scroll;
+    
+    
+}
+.footer
+{
+    height: 34.5vh;
+    width:100%;
+    background-color: aliceblue;
+    position: relative;
+    top: 100.0vh;
+}
+.image-gallery
+{
+position: relative;
+top: 1vh;
+background-color: blue;
+}

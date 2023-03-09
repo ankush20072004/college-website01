@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allenhouse Group Of Colleges</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="style sheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  
+  <script src="https://kit.fontawesome.com/6965d4a068.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="brand"><img src="Allen_Logo.png"></a>
+    <div class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <a href="aboutus.html">About Us</a>
+      <a href="academics.html">Academics</a>
+      <a href="Admission.html">Admission</a>
+      <a href="lifeatallem.html">Life at allen house</a>
+      <a href="contactus.html">Contact us</a>
+    </div>
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
+    </div>
+  </header>
+  <section class="section-main">
+    
+    <div class="container-slider">
+      <div class="loader">
+        <h1>Allen house Institute of Technology</h1>
+        </div>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/sliderimage1.jpeg" height="700">
+          
+          </div>
+          <div class="swiper-slide"><img src="images/sliderimage2.jpeg" height="700"></div>
+          <div class="swiper-slide"><img src="images/sliderimage3.jpeg" height="700"></div>
+          <div class="swiper-slide"><img src="images/sliderimage4.jpeg" height="700"></div>
+          <div class="swiper-slide"><img src="images/sliderimage5.jpeg"height="700"></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  <div class="popup">
+    <div class="close"><img src="/images/close.png" height="20x"></div>
+    <img src="/images/Screenshot (150).png" height="650px">
+  </div>
+  <script>
+    const popup = document.querySelector('.popup');
+    const close = document.querySelector('.close');
+    window.onload = function () {
+      setTimeout(function () {
+        popup.style.display = "block"
+      }, 2000)
+    }
+    close.addEventListener('click', () => { popup.style.display = "none"; })
+    
+  </script>
+
+  <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      // Optional parameters
+      loop: true,
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+  <!--section 2 for abut -->
+  <section class="section-about">
+    <div class="video">
+      <iframe  src="https://www.youtube.com/embed/FslFvk4BbE4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <div class="text">
+      <h1>About the Institute</h1>
+      <pre>
+Allenhouse Group of Institutions, established in the yea
+r 2009,offers graduate and postgraduate courses in B.Tec
+h.,BBA, BCA,Polytechnic, and MBA. Allenhouse Colleges Ca
+mpus houses three Institutes, Allenhouse Institute of Te
+chnology Allenhouse Business School & Allenhouse Institu
+te of Management.It is located at Rooma,Kanpur spread ov
+er a sprawling green campus. It has been awarded as the 
+Most Outstanding Engineering& Management College in Indi
+a. It is also ranked as the 4th Best Private Engineering
+Institute in Uttar Pradesh and as the 4th Top Emerging B
+BA Institute in India.Allenhouse Colleges has the best i
+nfra structure and offers top quality education with an 
+exclusive overall development of students.
+</pre>
+    </div>
+  </section>
+  <!--section 3 for videos-->
+  <section class="section-videos">
+    <div class="top">
+      Watch the videos to know more...
+    </div>
+    <div class="Aboutvideos">
+      <iframe  src="https://www.youtube.com/embed/I9yyFSZe64Y" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe   src="https://www.youtube.com/embed/UhZR29N677U" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      <iframe   src="https://www.youtube.com/embed/oyca2mfxK-M" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>  </div>
+  </section>
+  <!--section 4 for counter-->
+  <div class="counter-up">
+    <div class="content">
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+          <div class="counter">724</div>
+          <div class="text">Companies Visited</div>
+        </div>
+
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="counter">508</div>
+          <div class="text">Student Placed</div>
+        </div>
+
+        <div class="box">
+          <div class="icon"><i class="fa fa-users"></i></div>
+          <div class="counter">724</div>
+          <div class="text">Community</div>
+        </div>
+
+        <div class="box">
+          <div class="icon"><i class="fa fa-history"></i></div>
+          <div class="counter">724</div>
+          <div class="text">Total Student</div>
+        </div>
+      </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".counter").counterUp({
+            delay: 10,
+            time: 1200
+        });
+    });
+</script>
+  <!--section 5 for important links-->
+  <h2>Important Links</h2>
+  <section class="links">    
+    <div class="link">
+    <div class="item1"><a href="https://erp.allenhousecolleges.com/">Allen House ERP</a></div>
+    <div class="item1"><a href="https://www.elogisol.com/elogipay/">Pay Fee</a></div>
+    <div class="item1"><a href="https://allenhouse.ac.in/alumni-registration/">Alumani Registeration</a></div>
+  </div>
+  </section>
+  <!--section 6 for -->
+  <section class="more">
+    <div class="pros">
+      <div class="item">AIT Prospectus</div>
+      <div class="item">ABS Prospectus</div>
+      <div class="item-2">
+        <iframe src="pdf.pdf"></iframe></div>
+      <div class="item-3">
+       <iframe src="pdf2.pdf"></iframe></div>
+
+    </div>
+</div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Academics <div class='underline'><span></span></h4>
+                  <ul>
+                    <li><a href="/foter/MBA.html">MBA</a></li>
+                    <li><a href="/foter/BCA.html">BCA </a></li>
+                    <li><a href="/foter/BBA.html">BBA</a></li>
+                    <li><a href="/foter/B-tech.html">B.Tech</a></li>
+                    <li><a href="/foter/Diploma.html">Diploma</a></li>
+                    <li><a href="/foter/humanities.html">Applied Human & Science</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Facilites <div class='underline'><span></span></h4>
+                <ul>
+                    <li><a href="/foter/central_lib.html">Central Library</a></li>
+                    <li><a href="/foter/computer_centre.html">Computer Centre</a></li>
+                    <li><a href="/foter/health_care.html">Health Care</a></li>
+                    <li><a href="/foter/gymnasium.html">Gymnasium</a></li>
+                    <li><a href="/foter/cafeteria.html">Cafeteria</a></li>
+                    <li><a href="/foter/hostel.html">Hostle</a></li>
+
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Addmissions <div class='underline'><span></span></h4>
+                  <ul>
+                    <li><a href="/foter/inquiry.html">Apply Now</a></li>
+                    <li><a href="/foter/e-brochure.html">Brochure</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Follow us <div class='underline'><span></span></div>
+                </h4>
+                <div class="social-links">
+
+                    <a href="https://www.facebook.com/AllenhouseGroupofInstitutions/"> <i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/allen_college"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/allenhousecollege/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/allenhousecolleges/"> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+    </div>
+    <hr>
+    <p class="copyright"> Allenhouse Group of Institutions © 2022 - All Right Reserved</p>
+    <hr>
+</footer>
+</body>
+</html>

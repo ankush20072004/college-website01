@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header
+{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+   width: 100vw;
+display: flex;
+justify-content: center;
+padding: 2vh 10vh;
+transition: 0.6s;
+max-height: 9vh;
+border-bottom-left-radius:2vh ;
+border-bottom-right-radius:2vh;
+background-color: rgb(3 ,36, 60);
+
+}
+header.sticky
+{
+ background-color: rgb(47, 64, 77);
+ padding: 1.5vw 10vw;
+
+}
+header .brand
+{
+    color: white;
+    font-size: 3vh;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.2vw;
+    
+}
+header .brand  img
+{
+    height: 14.6vh;
+    position: relative;
+    right: 11.2vw;
+    top: -2.1vh;
+    border-bottom-left-radius:2vw ;
+}
+header.menu
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header .menu a{
+    font-size: 2.8vh;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #fff;
+    margin: 0 1vh;
+    padding: 0.8vw 1vw 0.6vw 1.4vw;
+    position: relative;
+    top: 2.4vh;
+    left: 4.1vw;
+    border-radius: 2.0vw;
+    transition:0.3s ease-out;
+    transition-property:color,background ;
+}
+header .menu a:hover
+{
+    color: rgb(103, 103, 94);
+    background-color: #fff;
+    
+
+}
+header .btn
+{
+    color: white;
+    font-size:2.5vh;
+    cursor: pointer;
+    display: none;
+    height: 2.0vh;
+}
+.container
+
+
+{
+    position: relative;
+    width: 100vw;
+    height:40vh ;
+}
+.container img{
+    width: 100vw;
+    height:40vh ;
+}
+.container .description
+{   justify-content: center;
+    align-items:center ;
+    padding-right: 0.5vw;
+    display: grid;
+    position: relative;
+    height: 10.0vh;
+    grid-template-columns: 25.5vw 25.5vw 25.5vw;
+    grid-template-rows: 10.0vh;
+    top: -12.7vh;
+    grid-column-gap:  10.0vh;
+
+}
+
+.container .description .item1 ,.container .description .item2 ,.container .description .item3
+{    display: flex;
+     justify-content: center;
+    align-items: center;
+    background-color: rgb(8, 4, 50);
+    color: #fff;
+    text-shadow:0 0 1.0vh #fff;
+    font-size: 2vw;
+   padding: 1.0vw;
+   border-radius: 0.2vw;
+}
+.info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 7vh;
+   
+    background-color: rgb(2, 2, 54);
+    font-size: 3vw;
+    color: #fff;
+    text-shadow:0 0 10px #fff;
+}
+.textBox
+{
+    height: 70vh;
+    width: 100vw;
+    background-color: rgba(240, 248, 255, 0.645);
+    display: flex;
+    
+    padding-left: .55vw;
+    font-size: 1.7vw;
+    position: relative;
+    
+}
+.heading2 .moving
+        
+{
+            
+    height: 7.0vh;
+    display: flex;
+    float:right;
+    text-align: right;
+    align-items: center;
+     position: relative;
+    
+}
+.moving .letter
+{ 
+     color: rgb(5, 5, 65);
+    text-shadow:0 0 1.0vh rgb(108, 144, 214);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3.0vw;
+    font-weight: 500;
+    animation: mov 10s infinite ease;
+}
+@keyframes mov{
+ 0%
+{
+    transform: translate(0em);
+}
+25%{
+    transform: translateX(-5em);
+            
+    }
+    50%
+    {
+    transform: translateX(-9em);
+     }
+     75%
+     {
+    transform: translateX(-5em);
+     }
+    100%
+    {
+     transform: translateX(0em);
+             }
+}
+.textBox2
+{
+     position: relative;
+   
+     background-color: aliceblue;
+    height: 52vh;
+    width: 100vw;
+    display: flex;
+ }
+.textBox2 .super
+{
+    position: absolute;
+    background-color: rgb(6, 6, 66);
+    height: 7.0vh;
+    width: 100vw;
+     color: #fff;
+     display: flex-row;
+     justify-content: center;
+     text-align: center;
+     align-items: center;
+     text-shadow:0 0 1.0vh #fff;
+     font-size: 3vw;
+     font-weight: 400;
+
+}
+.container1{
+    width: 100vw;
+    height: 5vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    position: relative;
+    top: 15.0vh;
+                        
+}
+.swiper{
+  width: 40%;
+ height: fit-content;
+position: relative;
+  top: 15vh;
+     }
+.swiper-slide img
+     {
+     width: 100%;
+    }
+    .rect
+    {
+    position: relative;
+    
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: center;
+    color: rgb(5, 5, 82);
+    text-shadow:0 0 1.0vh rgb(162, 211, 235);
+    font-weight: 373;
+    }        
+    .textBox2 .textbox4
+    {
+        
+     position: relative;
+     top: 6.9vh;
+     font-size: 1.7vw;
+    } 
+    
